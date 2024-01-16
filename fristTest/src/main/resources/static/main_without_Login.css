@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+#topMenu {
+float: center;
+position: relative;
+width: 100%;
+height:100%;
+}
+#topMenu ul li {
+list-style: none;
+color: #000000;
+background-color: #FFFFFF;
+float: left;
+line-height: 50px;
+vertical-align: middle;
+text-align: center;
+}
+#topMenu .menuLink {
+text-decoration:none;
+color: #000000;
+display: block;
+width: 200px;
+font-size: 20px;
+font-weight: bold;
+}
+#topMenu .menuLink:hover {
+color: #FFFFFF;
+background-color: #4d4d4d;
+}
