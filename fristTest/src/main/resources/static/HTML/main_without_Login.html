@@ -2,7 +2,8 @@
 <head>
     <meta charset="UTF-8">
     <title>My Diary</title>
-    <link href = "main_without_Login.css" rel ="stylesheet" type ="text/css" />
+    <link href = "../CSS/main_without_Login.css" rel ="stylesheet" type ="text/css" />
+    <script src="../../../java/com/example/fristTest/LoginScript.js"></script>
 
 </head>
 <body>
@@ -17,12 +18,12 @@
     </ul>
 </nav>
 <br><br>
-<form action="#" accept-charset="UTF-8" name="LogInInfo" method="get" style="float: right;">
+<form id="LoginForm" action="#" accept-charset="UTF-8" name="LogInInfo" method="get" style="float: right;">
     <fieldset style="width:550px;" align="right">
         <legend>Log in</legend>
         ID : <input type="text" name="ID" >
         PassWord : <input type="password" name="PassWord">
-        <input type="button" value="확인"/>
+        <input type="button" value="확인" onclick="Login()"/>
     </fieldset>
 </form>
 
