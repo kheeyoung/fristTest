@@ -1,5 +1,7 @@
 package com.example.fristTest.dto;
 
+import com.example.fristTest.entity.Login;
+
 public class LoginForm {
 
     private String ID;
@@ -13,8 +15,13 @@ public class LoginForm {
     @Override
     public String toString() {
         return "LoginForm{" +
+
                 "ID='" + ID + '\'' +
                 ", PW='" + PW + '\'' +
                 '}';
+    }
+
+    public Login toEntity() {
+        return new Login(null,ID,PW);
     }
 }
