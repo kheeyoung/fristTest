@@ -1,0 +1,12 @@
+{{>layouts/header}}
+<div style="display: flex; justify-content: center;">
+    <form action="/controller/LoginController" method="post">
+        <fieldset style="padding: 10px; width: 100px;">
+            <legend>로그인</legend>
+            ID <br> <input type="text" name="ID"><br>
+            PW <br> <input type="password" name="PW"><br><br>
+            <button type="submit">제출하기</button>
+        </fieldset>
+    </form>
+</div>
+{{>layouts/footer}}

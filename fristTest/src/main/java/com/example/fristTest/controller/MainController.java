@@ -12,4 +12,5 @@ public class MainController {
 
         return "main"; //templates/main.mustache 를 브라우저로 전송시켜줌
     }
+
 }
