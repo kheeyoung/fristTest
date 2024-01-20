@@ -6,7 +6,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 
 @Entity //DB가 인식하게 함
-public class Login {
+public class UserInfo {
     @Id
     @GeneratedValue
     private Long idnum;
@@ -17,18 +17,23 @@ public class Login {
     @Column
     private String PW;
 
-    public Login(Long idnum,String ID, String PW){
+    @Column
+    private String NAME;
+
+    public UserInfo(Long idnum, String ID, String PW, String NAME){
         this.idnum=idnum;
         this.ID=ID;
         this.PW=PW;
+        this.NAME= NAME;
     }
 
     @Override
     public String toString() {
-        return "Login{" +
+        return "SignIn{" +
                 "idnum=" + idnum +
                 ", ID='" + ID + '\'' +
                 ", PW='" + PW + '\'' +
+                ", NAME='" + NAME + '\'' +
                 '}';
     }
 }
